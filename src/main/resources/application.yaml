@@ -1,0 +1,17 @@
+server:
+  port: 9090
+spring:
+  profiles:
+    active: dev
+master:
+  datasource:
+    url: jdbc:mysql://localhost:3306/multi_datasource?useUnicode=true&characterEncoding=utf8&useSSL=true
+    username: root
+    password: null
+    driverClassName: com.mysql.jdbc.Driver
+cluster:
+  datasource:
+    url: jdbc:mysql://localhost:3306/multi_datasource2?useUnicode=true&characterEncoding=utf8&useSSL=true
+    username: root
+    password: null
+    driverClassName: com.mysql.jdbc.Driver
